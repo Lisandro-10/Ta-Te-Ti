@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="./tateti.css">
+      <title>Ta Te Ti</title>
+
+      <script src="https://kit.fontawesome.com/e8b42d60e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <div class="header">
+            <div>
+                  <h1 class="tit">TA - TE - TI</h1>
+            </div>
+
+            <div class="choose-1">
+                  <p>Jugador 1</p>
+                  <input type="text" name="name" id="name1" class="player-name-in">
+                  <div>
+                        <div class="choose-section">
+                              <p class="choose-para">Cruz</p>
+                              <input type="radio" name="figure1" id="" value="cross" class="btn-radio" required>
+                        </div>
+                        <div class="choose-section">
+                              <p class="choose-para">Círculo</p>
+                              <input type="radio" name="figure1" id="" value="circle" class="btn-radio" required>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="choose-2">
+                  <p>Jugador 2</p>
+                  <input type="text" name="name" id="name2" class="player-name-in">
+                  <div>
+                        <div class="choose-section">
+                              <p class="choose-para">Cruz</p>
+                              <input type="radio" name="figure2" id="" value="cross" class="btn-radio" required>
+                        </div>
+                        <div class="choose-section">
+                              <p class="choose-para">Círculo</p>
+                              <input type="radio" name="figure2" id="" value="circle" class="btn-radio" required>
+                        </div>
+                  </div>
+            </div>
+
+      </div>
+
+      <div>
+            <a href="#gameTable"
+                  onclick="tateti.nameAssign(); tateti.figureChoose(); tateti.turnAssign(); tateti.manageTurn()"
+                  class="btn-start">Start Game</a>
+
+            <div class="table" id="gameTable">
+                  <div class="square" id="cuadro11"></div>
+                  <div class="square" id="cuadro12"></div>
+                  <div class="square" id="cuadro13"></div>
+                  <div class="square" id="cuadro21"></div>
+                  <div class="square" id="cuadro22"></div>
+                  <div class="square" id="cuadro23"></div>
+                  <div class="square" id="cuadro31"></div>
+                  <div class="square" id="cuadro32"></div>
+                  <div class="square" id="cuadro33"></div>
+            </div>
+      </div>
+
+      <div class="winner">
+            <p>El ganador es: <span></span></p>
+            <a href="#gametable">Reset Game</a>
+      </div>
+
+      <div class="footer">
+      </div>
+
+      <script src="./tateti.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!-- HTML -->
+<div id="parentDiv">
+      <p>This is the parent div</p>
+</div>
+
+<script>
+      // JavaScript
+      // Select the parent node
+      const parentDiv = document.getElementById('parentDiv');
+
+      // Create a new child node
+      const newChildNode = document.createElement('p');
+      const textNode = document.createTextNode('This is a new child node');
+      newChildNode.appendChild(textNode);
+
+      // Add the new child node to the parent node
+      parentDiv.appendChild(newChildNode);
+
+
+</script>

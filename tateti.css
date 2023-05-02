@@ -1,0 +1,112 @@
+/*
+Colores:
+background:2f2f4f
+tabla: 3a52a8
+cuadros: ecefe6
+
+*/
+
+*, body{
+      font-size: 24px;
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #2f2f4f;
+      color: white;
+}
+
+.tit{
+      font-size: 175%;
+      font-weight: 600;
+      margin-bottom: 3.4rem;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.choose-1{
+      margin-bottom: 3rem;
+}
+
+.choose-para{
+      margin: 10px;
+      font-size: 0.7rem;
+      font-weight: 400;
+}
+
+.player-name-in{
+      background-color: #ecefe6;
+      border: none;
+      color: black;
+      border: none;
+}
+
+.table{
+      background-color: #3a52a8;
+      height: 500px;
+      width: 500px;
+      max-width: 1140px;
+      margin: 100px auto 0 auto;
+      padding: 5%;
+}
+
+.header{
+      margin: 2rem;
+}
+
+.choose-section{
+      display: inline-block;
+      width: 12%;
+}
+
+
+.gameTable{
+      margin: 20px;
+}
+
+.square{
+      display: inline-block;
+      background-color: #ecefe6;
+      height: 145px;
+      width: 145px;
+      cursor: pointer;
+      padding: 1%;
+      position: relative;
+}
+
+.icon-para{
+      visibility: hidden;
+}
+
+.square-icon{
+      background-color: #ecefe6;
+      color: #3a52a8;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+/*Obvio que faltan hacerle animaciones*/
+.btn-start{
+      margin: 15px;
+      border-radius: 15px;
+      background-color: #3a52a8;
+      border: 2px solid transparent;
+      padding: 10px;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+.btn-radio{
+      cursor: pointer;
+      font-size: 3rem;
+      height: 20px;
+      width: 20px;
+      /*Hay que ver como styliar esto*/
+}
+
+.winner{
+      visibility: hidden;
+}
+
+.footer{
+      margin-top: 20px;
+}
